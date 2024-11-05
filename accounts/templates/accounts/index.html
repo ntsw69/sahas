@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Saahas</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="/static/css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="/static/css/owl.carousel.min.css" rel="stylesheet">
+
+        <link href="/static/css/owl.theme.default.min.css" rel="stylesheet">
+
+        <link href="/static/css/tooplate-gotto-job.css" rel="stylesheet">
+    </head>
+    <body>
+        <body id="top">
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="/static/images/15.png" class="img-fluid logo-image">
+    
+                        <div class="d-flex flex-column">
+                            <strong class="logo-text">Saahas</strong>
+                            <small class="logo-slogan">The Path of Justice</small>
+                        </div>
+                    </a>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav align-items-center ms-lg-5">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="404.html">Homepage</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="404.html">About Saahas</a>
+                            </li>
+    
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+    
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="404.html"> Super Admin Login</a></li>
+    
+                                    <li><a class="dropdown-item" href="admin/admin_login.php">Admin</a></li>
+                                </ul>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="404.html">Contact</a>
+                            </li>
+    
+                            <li class="nav-item ms-lg-auto">
+                                <a class="nav-link" href="404.html">Register</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link custom-btn btn" href="404.html">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+    <body id="top">
+        <main>
+        <section class="hero-section d-flex justify-content-center align-items-center">
+    <div class="section-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                <div class="hero-section-text mt-5">
+                    <h6 class="text-white">Welcome to</h6>
+                    <h1 class="hero-title text-white mt-4 mb-4">Saahas <br>The New path</h1>
+                    <a href="#categories-section" class="custom-btn custom-border-btn btn">Our Services</a>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-12">
+                <form class="custom-form hero-form" action="search_blood.php" method="post" role="form">
+                    <h3 class="text-white mb-3">Search the blood for needy person</h3>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <select class="form-select" name="bloodGroup" id="bloodGroup" required>
+                                <option value="">Choose blood group</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <select class="form-select" name="province" id="province" required>
+                                <option value="">Choose Your Province</option>
+                                <option value="Province 1">Province 1</option>
+                                <option value="Karnali Province">Karnali Province</option>
+                                <option value="Bagmati Province">Bagmati Province</option>
+                                <option value="SudurPaschim">SudurPaschim</option>
+                                <option value="Madhesh Province">Madhesh Province</option>
+                                <option value="Lumbini Province">Lumbini Province</option>
+                                <option value="Gandaki Province">Gandaki Province</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-12" style="margin-top: 5px;">
+                            <select class="form-select" name="city" id="city" required>
+                                <option value="">Choose Your City</option>
+                                <option value="Pokhara">Pokhara</option>
+                                <option value="Mahendranagar">Mahendranagar</option>
+                                <option value="Atariya">Atariya</option>
+                                <option value="Kathmandu">Kathmandu</option>
+                                <option value="Tikapur">Tikapur</option>
+                                <option value="Dhangadhi">Dhangadhi</option>
+                                <option value="Tikapur">Tikapur</option>
+                                <option value="Dipayal">Dipayal</option>
+                                <option value="Baitadi">Baitadi</option>
+                                <option value="Dadeldhura">Dadeldhura</option>
+                                <option value="Doti">Doti</option>
+                                <option value="Bajura">Bajura</option>
+                                <option value="Achham">Achham</option>
+                                <option value="Birendranagar">Birendranagar</option>
+                                <option value="Jumla">Jumla</option>
+                                <option value="Kalikot">Kalikot</option>
+                                <option value="Dailekh">Dailekh</option>
+                                <option value="Surkhet">Surkhet</option>
+                                <option value="Jajarkot">Jajarkot</option>
+                                <option value="Dolpa">Dolpa</option>
+                                <option value="Rukum West">Rukum West</option>
+                                <option value="Mugu">Mugu</option>
+                                <option value="Deukhuri">Deukhuri</option>
+                                <option value="Butwal">Butwal</option>
+                                <option value="Bhairahawa">Bhairahawa</option>
+                                <option value="Tansen">Tansen</option>
+                                <option value="Kapilvastu">Kapilvastu</option>
+                                <option value="Lumbini">Lumbini</option>
+                                <option value="Dang">Dang</option>
+                                <option value="Nepalgunj">Nepalgunj</option>
+                                <option value="Siddharthanagar">Siddharthanagar</option>
+                                <option value="Pyuthan">Pyuthan</option>
+                                <option value="Hetauda">Hetauda</option>
+                                <option value="Lalitpur">Lalitpur</option>
+                                <option value="Bhaktapur">Bhaktapur</option>
+                                <option value="Chitwan">Chitwan</option>
+                                <option value="Dhulikhel">Dhulikhel</option>
+                                <option value="Banepa">Banepa</option>
+                                <option value="Sindhuli">Sindhuli</option>
+                                <option value="Bidur">Bidur</option>
+                                <option value="Kavre">Kavre</option>
+                                <option value="Panauti">Panauti</option>
+                                <option value="Janakpur">Janakpur</option>
+                                <option value="Birgunj">Birgunj</option>
+                                <option value="Jaleshwar">Jaleshwar</option>
+                                <option value="Gaur">Gaur</option>
+                                <option value="Rajbiraj">Rajbiraj</option>
+                                <option value="Kalaiya">Kalaiya</option>
+                                <option value="Malangawa">Malangawa</option>
+                                <option value="Biratnagar">Biratnagar</option>
+                                <option value="Dharan">Dharan</option>
+                                <option value="Itahari">Itahari</option>
+                                <option value="Dhankuta">Dhankuta</option>
+                                <option value="Birtamod">Birtamod</option>
+                                <option value="Damak">Damak</option>
+                                <option value="Inaruwa">Inaruwa</option>
+                                <option value="Ilam">Ilam</option>
+                                <option value="Khandbari">Khandbari</option>
+                                <option value="Rajbiraj">Rajbiraj</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-12" style="margin-top: 5px;">
+                            <select class="form-select" name="state" id="state" required>
+                                <option value="">Choose Your State</option>
+                                <option value="Province 1">Province 1</option>
+                                <option value="Karnali Province">Karnali Province</option>
+                                <option value="Bagmati Province">Bagmati Province</option>
+                                <option value="SudurPaschim">SudurPaschim Province</option>
+                                <option value="Madhesh Province">Madhesh Province</option>
+                                <option value="Lumbini Province">Lumbini Province</option>
+                                <option value="Gandaki Province">Gandaki Province</option>
+                            </select>
+                        </div>
+
+                        <div class="col-lg-12 col-12" style="margin-top: 7px;">
+                            <button type="submit" class="form-control">Search Blood</button>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="d-flex flex-wrap align-items-center mt-4 mt-lg-0">
+                                <span class="text-white mb-lg-0 mb-md-0 me-2">Popular keywords:</span>
+                                <div>
+                                    <a href="job-listings.html" class="badge">Online Tutor</a>
+                                    <a href="job-listings.html" class="badge">Need Psychological Doctor</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+            <section class="categories-section section-padding" id="categories-section">
+                <div class="container">
+                    <div class="row justify-content-center align-items-center">
+
+                        <div class="col-lg-12 col-12 text-center">
+                            <h2 class="mb-5">Upcomming <span>Services</span></h2>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="categories-block">
+                                <a href="#" class="d-flex flex-column justify-content-center align-items-center h-100">
+                                    <i class="categories-icon bi-window"></i>
+                                
+                                    <small class="categories-block-title">Search Blood</small>
+
+                                    <div class="categories-block-number d-flex flex-column justify-content-center align-items-center">
+                                        <span class="categories-block-number-text"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="categories-block">
+                                <a href="#" class="d-flex flex-column justify-content-center align-items-center h-100">
+                                    <i class="categories-icon bi-twitch"></i>
+                                
+                                    <small class="categories-block-title">Donate Blood</small>
+
+                                    <div class="categories-block-number d-flex flex-column justify-content-center align-items-center">
+                                        <span class="categories-block-number-text"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="categories-block">
+                                <a href="#" class="d-flex flex-column justify-content-center align-items-center h-100">
+                                    <i class="categories-icon bi-play-circle-fill"></i>
+                                
+                                    <small class="categories-block-title">Anonymous Complaint</small>
+
+                                    <div class="categories-block-number d-flex flex-column justify-content-center align-items-center">
+                                        <span class="categories-block-number-text"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="categories-block">
+                                <a href="Dashboard/Doctor_dashboard.php" class="d-flex flex-column justify-content-center align-items-center h-100">
+                                    <i class="categories-icon bi-globe"></i>
+                                
+                                    <small class="categories-block-title">Physocological help</small>
+
+                                    <div class="categories-block-number d-flex flex-column justify-content-center align-items-center">
+                                        <span class="categories-block-number-text"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <div class="categories-block">
+                                <a href="#" class="d-flex flex-column justify-content-center align-items-center h-100">
+                                    <i class="categories-icon bi-people"></i>
+                                
+                                    <small class="categories-block-title">Customer Support</small>
+
+                                    <div class="categories-block-number d-flex flex-column justify-content-center align-items-center">
+                                        <span class="categories-block-number-text"></span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="about-section">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-12">
+                            <div class="about-image-wrap custom-border-radius-start">
+                                <img src="/static/images/19.png" class="about-image custom-border-radius-start img-fluid" alt="">
+
+                                <div class="about-info">
+                                    <h4 class="text-white mb-0 me-2">Subodh Joshi</h4>
+
+                                    <p class="text-white mb-0">Founder</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="custom-text-block">
+                                <h2 class="text-white mb-2">Introduction Saahas</h2>
+
+                                <p class="text-white"> Our website provide blood to the needy people, provide online tutor for your children and not this we provide you the Physocological doctor for your mental illness.</p>
+
+                                <div class="custom-border-btn-wrap d-flex align-items-center mt-5">
+                                    <a href="about.html" class="custom-btn custom-border-btn btn me-4">Get to know us</a>
+
+                                    <a href="#job-section" class="custom-link smoothscroll">Explore Saahas</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-12">
+                            <div class="about-image-wrap custom-border-radius-start">
+                                <img src="/static/images/19.png" class="about-image custom-border-radius-start img-fluid" alt="">
+
+                                <div class="about-info">
+                                    <h4 class="text-white mb-0 me-2">Subodh Joshi</h4>
+
+                                    <p class="text-white mb-0">Founder</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="job-section job-featured-section section-padding" id="job-section">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12 text-center mx-auto mb-4">
+                            <h2>Upcomming services</h2>
+
+                            <p><strong> there will be few services </strong>which are down below. </p>
+                        </div>
+
+                        <div class="col-lg-12 col-12">
+                            <div class="job-thumb d-flex">
+                                <div class="job-image-wrap bg-white shadow-lg">
+                                    <img src="/static/images/logos/1.png" class="job-image img-fluid" alt="">
+                                </div>
+
+                                <div class="job-body d-flex flex-wrap flex-auto align-items-center ms-4">
+                                    <div class="mb-3">
+                                        <h4 class="job-title mb-lg-0">
+                                            <a href="{% url 'userLogin' %}" class="job-title-link">Anonymous Complaint</a>
+                                        </h4>
+
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <p class="job-location mb-0">
+                                                <i class="custom-icon bi-geo-alt me-1"></i>
+                                                Dhangadhi,Kalilai
+                                            </p>
+
+                                            <div class="d-flex">
+                                                <p class="mb-0">
+                                                    <a href="Dashboard/Online Tutor/tutor.php" class="badge badge-level"></a>
+                                                </p>
+
+                                                <p class="mb-0">
+                                                    <a href="LCA/user/dashboard.php" class="badge"></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="job-section-btn-wrap">
+                                        <a href="LCA/police.php" class="custom-btn btn">Upcomming</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="job-thumb d-flex">
+                                <div class="job-image-wrap bg-white shadow-lg">
+                                    <img src="/static/images/logos/2.png" class="job-image img-fluid" alt="">
+                                </div>
+
+                                <div class="job-body d-flex flex-wrap flex-auto align-items-center ms-4">
+                                    <div class="mb-3">
+                                        <h4 class="job-title mb-lg-0">
+                                            <a href="job-details.html" class="job-title-link">Blood Donation</a>
+                                        </h4>
+
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <p class="job-location mb-0">
+                                                <i class="custom-icon bi-geo-alt me-1"></i>
+                                                All over Nepal
+                                            </p>
+
+                                            <div class="d-flex">
+                                                <p class="mb-0">
+                                                    <a href="job-listings.html" class="badge badge-level"></a href="job-listings.html">
+                                                </p>
+
+                                                <p class="mb-0">
+                                                    <a href="job-listings.html" class="badge"></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="job-section-btn-wrap">
+                                        <a href="job-details.html" class="custom-btn btn">Upcomming</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="job-thumb d-flex">
+                                <div class="job-image-wrap bg-white shadow-lg">
+                                    <img src="/static/images/logos/3.png" class="job-image img-fluid" alt="">
+                                </div>
+
+                                <div class="job-body d-flex flex-wrap flex-auto align-items-center ms-4">
+                                    <div class="mb-3">
+                                        <h4 class="job-title mb-lg-0">
+                                            <a href="Dashboard/Doctor_dashboard.php" class="job-title-link">Physocological Help</a>
+                                        </h4>
+
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <p class="job-location mb-0">
+                                                <i class="custom-icon bi-geo-alt me-1"></i>
+                                                Dhangadhi
+                                            </p>
+
+                                            <div class="d-flex">
+                                                <p class="mb-0">
+                                                    <a href="Dashboard/Doctor_dashboard.php" class="badge badge-level"></a>
+                                                </p>
+
+                                                <p class="mb-0">
+                                                    <a href="Dashboard/Doctor_dashboard.php" class="badge"></a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="job-section-btn-wrap">
+                                        <a href="Dashboard/Doctor_dashboard.php" class="custom-btn btn">Upcomming</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center mt-5">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">Prev</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="page-item active" aria-current="page">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">3</a>
+                                    </li>
+
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">4</a>
+                                    </li>
+
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">5</a>
+                                    </li>
+                                    
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">Next</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section>
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12">
+                            <div class="custom-text-block custom-border-radius-start">
+                                <h2 class="text-white mb-3">At Saahas </h2>
+
+                                <p class="text-white">we're dedicated to making a meaningful impact in our community by connecting those in need with essential resources.</p>
+
+                                <div class="d-flex mt-4">
+                                    <div class="counter-thumb"> 
+                                        <div class="d-flex">
+                                            <span class="counter-number" data-from="1" data-to="12" data-speed="1000"></span>
+                                            <span class="counter-number-text"></span>
+                                        </div>
+
+                                        <span class="counter-text">Our Member</span>
+                                    </div> 
+
+                                    <div class="counter-thumb">    
+                                        <div class="d-flex">
+                                            <span class="counter-number" data-from="1" data-to="100" data-speed="1000"></span>
+                                            <span class="counter-number-text"></span>
+                                        </div>
+
+                                        <span class="counter-text">Our users</span>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="video-thumb">
+                                <img src="/static/images/people-working-as-team-company.jpg" class="about-image custom-border-radius-end img-fluid" alt="">
+
+                                <div class="video-info">
+                                    <a href="https://www.youtube.com/tooplate" class="youtube-icon bi-youtube"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="job-section recent-jobs-section section-padding">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-6 col-12 mb-4">
+                            <h2>In Upcomming Online Tutor Project :  </h2>
+
+                            <p><strong>We provide you the notes and classes of following subjects :</strong> </p>
+                        </div>
+
+                        <div class="clearfix"></div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="job-thumb job-thumb-box">
+                                <div class="job-image-box-wrap">
+                                    <a href="job-details.html">
+                                        <img src="/static/images/jobs/1.jpg" class="job-image img-fluid" alt="">
+                                    </a>
+
+                                    <div class="job-image-box-wrap-info d-flex align-items-center">
+                                        <p class="mb-0">
+                                            <a href="job-listings.html" class="badge badge-level"></a>
+                                        </p>
+
+                                        <p class="mb-0">
+                                            <a href="job-listings.html" class="badge"></a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="job-body">
+                                    <h4 class="job-title">
+                                        <a href="job-details.html" class="job-title-link">Mathematics</a>
+                                    </h4>
+
+                                    <div class="d-flex align-items-center">
+                                        <div class="job-image-wrap d-flex align-items-center bg-white shadow-lg mt-2 mb-4">
+                                            <img src="images/logos/4.png" class="job-image me-3 img-fluid" alt="">
+
+                                            <p class="mb-0">By</p>
+                                        </div>
+
+                                        <a href="#" class="bi-bookmark ms-auto me-2">
+                                        </a>
+
+                                        <a href="#" class="bi-heart">
+                                        </a>
+                                    </div>
+
+                                    <div class="d-flex align-items-center">
+                                        <p class="job-location">
+                                            <i class="custom-icon bi-geo-alt me-1"></i>
+                                            Dhangadhi
+                                        </p>
+
+                                        <p class="job-date">
+                                            <i class="custom-icon bi-clock me-1"></i>
+                                            -
+                                        </p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center border-top pt-3">
+                                        <p class="job-price mb-0">
+                                            <i class="custom-icon bi-cash me-1"></i>
+                                            -
+                                        </p>
+
+                                        <a href="job-details.html" class="custom-btn btn ms-auto">Apply now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="job-thumb job-thumb-box">
+                                <div class="job-image-box-wrap">
+                                    <a href="job-details.html">
+                                        <img src="/static/images/jobs/2.jpg" class="job-image img-fluid" alt="marketing assistant">
+                                    </a>
+
+                                    <div class="job-image-box-wrap-info d-flex align-items-center">
+                                        <p class="mb-0">
+                                            <a href="job-listings.html" class="badge badge-level"></a>
+                                        </p>
+
+                                        <p class="mb-0">
+                                            <a href="job-listings.html" class="badge"></a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="job-body">
+                                    <h4 class="job-title">
+                                        <a href="job-details.html" class="job-title-link">Science</a>
+                                    </h4>
+
+                                    <div class="d-flex align-items-center">
+                                        <div class="job-image-wrap d-flex align-items-center bg-white shadow-lg mt-2 mb-4">
+                                            <img src="images/logos/4.png" class="job-image me-3 img-fluid" alt="">
+
+                                            <p class="mb-0">By</p>
+                                        </div>
+
+                                        <a href="#" class="bi-bookmark ms-auto me-2">
+                                        </a>
+
+                                        <a href="#" class="bi-heart">
+                                        </a>
+                                    </div>
+
+                                    <div class="d-flex align-items-center">
+                                        <p class="job-location">
+                                            <i class="custom-icon bi-geo-alt me-1"></i>
+                                            Dhangadhi
+                                        </p>
+
+                                        <p class="job-date">
+                                            <i class="custom-icon bi-clock me-1"></i>
+                                        -
+                                        </p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center border-top pt-3">
+                                        <p class="job-price mb-0">
+                                            <i class="custom-icon bi-cash me-1"></i>
+                                            -
+                                        </p>
+
+                                        <a href="job-details.html" class="custom-btn btn ms-auto">Apply now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="job-thumb job-thumb-box">
+                                <div class="job-image-box-wrap">
+                                    <a href="job-details.html">
+                                        <img src="/static/images/jobs/3.jpg" class="job-image img-fluid" alt="">
+                                    </a>
+
+                                    <div class="job-image-box-wrap-info d-flex align-items-center">
+                                        <p class="mb-0">
+                                            <a href="job-listings.html" class="badge badge-level"></a>
+                                        </p>
+
+                                        <p class="mb-0">
+                                            <a href="job-listings.html" class="badge"></a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="job-body">
+                                    <h4 class="job-title">
+                                        <a href="job-details.html" class="job-title-link">English</a>
+                                    </h4>
+                                        
+                                    <div class="d-flex align-items-center">
+                                        <div class="job-image-wrap d-flex align-items-center bg-white shadow-lg mt-2 mb-4">
+                                            <img src="images/logos/4.png" class="job-image me-3 img-fluid" alt="">
+
+                                            <p class="mb-0">By</p>
+                                        </div>
+
+                                        <a href="#" class="bi-bookmark ms-auto me-2">
+                                        </a>
+
+                                        <a href="#" class="bi-heart">
+                                        </a>
+                                    </div>
+
+                                    <div class="d-flex align-items-center">
+                                        <p class="job-location">
+                                            <i class="custom-icon bi-geo-alt me-1"></i>
+                                            Dhangadhi
+                                        </p>
+
+                                        <p class="job-date">
+                                            <i class="custom-icon bi-clock me-1"></i>
+                                            -
+                                        </p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center border-top pt-3">
+                                        <p class="job-price mb-0">
+                                            <i class="custom-icon bi-cash me-1"></i>
+                                            -
+                                        </p>
+
+                                        <a href="job-details.html" class="custom-btn btn ms-auto">Apply now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="job-thumb job-thumb-box">
+                                <div class="job-image-box-wrap">
+                                    <a href="job-details.html">
+                                        <img src="/static/images/jobs/4.jpg" class="job-image img-fluid" alt="">
+                                    </a>
+
+                                    <div class="job-image-box-wrap-info d-flex align-items-center">
+                                        <p class="mb-0">
+                                            <a href="job-listings.html" class="badge badge-level"></a>
+                                        </p>
+
+                                        <p class="mb-0">
+                                            <a href="job-listings.html" class="badge"></a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="job-body">
+                                    <h4 class="job-title">
+                                        <a href="job-details.html" class="job-title-link">Chemistry</a>
+                                    </h4>
+
+                                    <div class="d-flex align-items-center">
+                                        <div class="job-image-wrap d-flex align-items-center bg-white shadow-lg mt-2 mb-4">
+                                            <img src="images/logos/4.png" class="job-image me-3 img-fluid" alt="">
+
+                                            <p class="mb-0">By</p>
+                                        </div>
+
+                                        <a href="#" class="bi-bookmark ms-auto me-2">
+                                        </a>
+
+                                        <a href="#" class="bi-heart">
+                                        </a>
+                                    </div>
+
+                                    <div class="d-flex align-items-center">
+                                        <p class="job-location">
+                                            <i class="custom-icon bi-geo-alt me-1"></i>
+                                            Dhangadhi
+                                        </p>
+
+                                        <p class="job-date">
+                                            <i class="custom-icon bi-clock me-1"></i>
+                                            -
+                                        </p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center border-top pt-3">
+                                        <p class="job-price mb-0">
+                                            <i class="custom-icon bi-cash me-1"></i>
+                                            -
+                                        </p>
+
+                                        <a href="job-details.html" class="custom-btn btn ms-auto">Apply now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="job-thumb job-thumb-box">
+                                <div class="job-image-box-wrap">
+                                    <a href="job-details.html">
+                                        <img src="/static/images/jobs/5.jpg" class="job-image img-fluid" alt="">
+                                    </a>
+
+                                    <div class="job-image-box-wrap-info d-flex align-items-center">
+                                        <p class="mb-0">
+                                            <a href="job-listings.html" class="badge badge-level"></a>
+                                        </p>
+
+                                        <p class="mb-0">
+                                            <a href="job-listings.html" class="badge"></a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="job-body">
+                                    <h4 class="job-title">
+                                        <a href="job-details.html" class="job-title-link">Physics</a>
+                                    </h4>
+                                        
+                                    <div class="d-flex align-items-center">
+                                        <div class="job-image-wrap d-flex align-items-center bg-white shadow-lg mt-2 mb-4">
+                                            <img src="images/logos/4.png" class="job-image me-3 img-fluid" alt="">
+
+                                            <p class="mb-0">By</p>
+                                        </div>
+
+                                        <a href="#" class="bi-bookmark ms-auto me-2">
+                                        </a>
+
+                                        <a href="#" class="bi-heart">
+                                        </a>
+                                    </div>
+
+                                    <div class="d-flex align-items-center">
+                                        <p class="job-location">
+                                            <i class="custom-icon bi-geo-alt me-1"></i>
+                                            Dhangadhi
+                                        </p>
+
+                                        <p class="job-date">
+                                            <i class="custom-icon bi-clock me-1"></i>
+                                            -
+                                        </p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center border-top pt-3">
+                                        <p class="job-price mb-0">
+                                            <i class="custom-icon bi-cash me-1"></i>
+                                            -
+                                        </p>
+
+                                        <a href="job-details.html" class="custom-btn btn ms-auto">Apply now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="job-thumb job-thumb-box">
+                                <div class="job-image-box-wrap">
+                                    <a href="job-details.html">
+                                        <img src="/static/images/jobs/6.jpg" class="job-image img-fluid" alt="">
+                                    </a>
+
+                                    <div class="job-image-box-wrap-info d-flex align-items-center">
+                                        <p class="mb-0">
+                                            <a href="job-listings.html" class="badge badge-level"></a>
+                                        </p>
+
+                                        <p class="mb-0">
+                                            <a href="job-listings.html" class="badge"></a>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="job-body">
+                                    <h4 class="job-title">
+                                        <a href="job-details.html" class="job-title-link">Programming</a>
+                                    </h4>
+                                        
+                                    <div class="d-flex align-items-center">
+                                        <div class="job-image-wrap d-flex align-items-center bg-white shadow-lg mt-2 mb-4">
+                                            <img src="images/logos/4.png" class="job-image me-3 img-fluid" alt="">
+
+                                            <p class="mb-0">By</p>
+                                        </div>
+
+                                        <a href="#" class="bi-bookmark ms-auto me-2">
+                                        </a>
+
+                                        <a href="#" class="bi-heart">
+                                        </a>
+                                    </div>
+
+                                    <div class="d-flex align-items-center">
+                                        <p class="job-location">
+                                            <i class="custom-icon bi-geo-alt me-1"></i>
+                                            Dhangadhi
+                                        </p>
+
+                                        <p class="job-date">
+                                            <i class="custom-icon bi-clock me-1"></i>
+                                            -
+                                        </p>
+                                    </div>
+
+                                    <div class="d-flex align-items-center border-top pt-3">
+                                        <p class="job-price mb-0">
+                                            <i class="custom-icon bi-cash me-1"></i>
+                                            -
+                                        </p>
+
+                                        <a href="job-details.html" class="custom-btn btn ms-auto">Apply now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12 recent-jobs-bottom d-flex ms-auto my-4">
+                            <a href="job-listings.html" class="custom-btn btn ms-lg-auto">More Projects</a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="reviews-section section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12">
+                            <h2 class="text-center mb-5">Happy customers</h2>
+
+                            <div class="owl-carousel owl-theme reviews-carousel">
+                                <div class="reviews-thumb">
+                                
+                                    <div class="reviews-info d-flex align-items-center">
+                                        <img src="/static/images/avatar/portrait-charming-middle-aged-attractive-woman-with-blonde-hair.jpg" class="avatar-image img-fluid" alt="">
+
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
+                                            <p class="mb-0">
+                                                <strong>Susan L</strong>
+                                                <small>Product Manager</small>
+                                            </p>
+
+                                            <div class="reviews-icons">
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="reviews-body">
+                                        <img src="images/left-quote.png" class="quote-icon img-fluid" alt="">
+
+                                        <h4 class="reviews-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h4>
+                                    </div>
+                                </div>
+
+                                <div class="reviews-thumb">
+                                    <div class="reviews-info d-flex align-items-center">
+                                        <img src="/static/images/avatar/medium-shot-smiley-senior-man.jpg" class="avatar-image img-fluid" alt="">
+
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
+                                            <p class="mb-0">
+                                                <strong>Jack</strong>
+                                                <small>Technical Lead</small>
+                                            </p>
+
+                                            <div class="reviews-icons">
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star"></i>
+                                                <i class="bi-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="reviews-body">
+                                        <img src="images/left-quote.png" class="quote-icon img-fluid" alt="">
+
+                                        <h4 class="reviews-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h4>
+                                    </div>
+                                </div>
+
+                                <div class="reviews-thumb">
+
+                                    <div class="reviews-info d-flex align-items-center">
+                                        <img src="/static/images/avatar/portrait-beautiful-young-woman.jpg" class="avatar-image img-fluid" alt="">
+
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
+                                            <p class="mb-0">
+                                                <strong>Haley</strong>
+                                                <small>Sales & Marketing</small>
+                                            </p>
+
+                                            <div class="reviews-icons">
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="reviews-body">
+                                        <img src="/static/images/left-quote.png" class="quote-icon img-fluid" alt="">
+
+                                        <h4 class="reviews-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h4>
+                                    </div>
+                                </div>
+
+                                <div class="reviews-thumb">
+                                    <div class="reviews-info d-flex align-items-center">
+                                        <img src="/static/images/avatar/blond-man-happy-expression.jpg" class="avatar-image img-fluid" alt="">
+
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
+                                            <p class="mb-0">
+                                                <strong>Jackson</strong>
+                                                <small>Dev Ops</small>
+                                            </p>
+
+                                            <div class="reviews-icons">
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star"></i>
+                                                <i class="bi-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="reviews-body">
+                                        <img src="/static/images/left-quote.png" class="quote-icon img-fluid" alt="">
+
+                                        <h4 class="reviews-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h4>
+                                    </div>
+                                </div>
+
+                                <div class="reviews-thumb">
+                                    <div class="reviews-info d-flex align-items-center">
+                                        <img src="images/avatar/university-study-abroad-lifestyle-concept.jpg" class="avatar-image img-fluid" alt="">
+
+                                        <div class="d-flex align-items-center justify-content-between flex-wrap w-100 ms-3">
+                                            <p class="mb-0">
+                                                <strong>Kevin</strong>
+                                                <small>Internship</small>
+                                            </p>
+
+                                            <div class="reviews-icons">
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                                <i class="bi-star-fill"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="reviews-body">
+                                        <img src="/static/images/left-quote.png" class="quote-icon img-fluid" alt="">
+
+                                        <h4 class="reviews-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="cta-section">
+                <div class="section-overlay"></div>
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-10">
+                            <h2 class="text-white mb-2">Saahas</h2>
+
+                            <p class="text-white">Join us in saving lives by easily connecting blood donors with those in urgent need. Our user-friendly interface allows you to find local donation drives, schedule appointments, and track the impact of your contributions. Together, we can ensure that no one faces a medical crisis alone.</p>
+                        </div>
+
+                        <div class="col-lg-4 col-12 ms-auto">
+                            <div class="custom-border-btn-wrap d-flex align-items-center mt-lg-4 mt-2">
+                                <a href="#" class="custom-btn custom-border-btn btn me-4">Create an account</a>
+
+                                <a href="#" class="custom-link">Help to Donate blood</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-3">
+                        <div class="d-flex align-items-center mb-4">
+                            <img src="/static/images/logo.png" class="img-fluid logo-image">
+
+                            <div class="d-flex flex-column">
+                                <strong class="logo-text">Saahas</strong>
+                                <small class="logo-slogan">The Path of Justice</small>
+                            </div>
+                        </div>  
+
+                        <p class="mb-2">
+                            <i class="custom-icon bi-globe me-1"></i>
+
+                            <a href="#" class="site-footer-link">
+                                www.saahas.com.np
+                            </a>
+                        </p>
+
+                        <p class="mb-2">
+                            <i class="custom-icon bi-telephone me-1"></i>
+
+                            <a href="tel: 305-240-9671" class="site-footer-link">
+                                +9779812679330
+                            </a>
+                        </p>
+
+                        <p>
+                            <i class="custom-icon bi-envelope me-1"></i>
+
+                            <a href="mailto:info@yourgmail.com" class="site-footer-link">
+                                parvashji4@gmail.com
+                            </a>
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 col-6 ms-lg-auto">
+                        <h6 class="site-footer-title">Company</h6>
+
+                        <ul class="footer-menu">
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">About</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Blog</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Jobs</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 col-6">
+                        <h6 class="site-footer-title">Resources</h6>
+
+                        <ul class="footer-menu">
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Guide</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">How it works</a></li>
+
+                            <li class="footer-menu-item"><a href="#" class="footer-menu-link">Salary Tool</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-8 col-12 mt-3 mt-lg-0">
+                        <h6 class="site-footer-title">Newsletter</h6>
+
+                        <form class="custom-form newsletter-form" action="#" method="post" role="form">
+                            <h6 class="site-footer-title">If any enquries then send email</h6>
+
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1"><i class="bi-person"></i></span>
+
+                                <input type="text" name="newsletter-name" id="newsletter-name" class="form-control" placeholder="yourname@gmail.com" required>
+
+                                <button type="submit" class="form-control">
+                                    <i class="bi-send"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="site-footer-bottom">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-4 col-12 d-flex align-items-center">
+                            <p class="copyright-text">Copyright © Saahas 2081</p>
+
+                            <ul class="footer-menu d-flex">
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Privacy Policy</a></li>
+
+                                <li class="footer-menu-item"><a href="#" class="footer-menu-link">Terms</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-5 col-12 mt-2 mt-lg-0">
+                            <ul class="social-icon">
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-twitter"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-facebook"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-linkedin"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-instagram"></a>
+                                </li>
+
+                                <li class="social-icon-item">
+                                    <a href="#" class="social-icon-link bi-youtube"></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-12 mt-2 d-flex align-items-center mt-lg-0">
+                            <p>Design: Parash Bohara</p>
+                        </div>
+
+                        <a class="back-top-icon bi-arrow-up smoothscroll d-flex justify-content-center align-items-center" href="#top"></a>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+     <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/counter.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+    
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biometric Verification</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Biometric Verification</h1>
+        <button id="start-fingerprint">Verify with Fingerprint</button>
+        <button id="start-face">Verify with Face Recognition</button>
+
+        <div id="verification-result">
+            {% if verification_result %}
+                <p>{{ verification_result }}</p>
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        async function verifyBiometric(method) {
+            try {
+                const publicKey = {
+                    challenge: new Uint8Array(32),  // Generate a secure random challenge
+                    // other parameters as needed
+                };
+
+                // Use the Web Authentication API to verify biometric
+                const credential = await navigator.credentials.get({ publicKey });
+                
+                if (credential) {
+                    // Handle successful verification
+                    const response = await fetch('/accounts/verify-biometric/', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'X-CSRFToken': getCookie('csrftoken')  // CSRF token for security
+                        },
+                        body: JSON.stringify({ method, credential })
+                    });
+                    
+                    const result = await response.json();
+                    document.getElementById('verification-result').innerText = result.message;
+                }
+            } catch (error) {
+                console.error('Biometric verification failed:', error);
+                document.getElementById('verification-result').innerText = 'Verification failed. Please try again.';
+            }
+        }
+
+        document.getElementById('start-fingerprint').addEventListener('click', () => verifyBiometric('fingerprint'));
+        document.getElementById('start-face').addEventListener('click', () => verifyBiometric('face'));
+    </script>
+</body>
+</html>

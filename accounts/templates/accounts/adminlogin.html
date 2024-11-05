@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="/static/login.css">
+</head>
+<style>
+    .button{
+        right: 100px
+    }
+</style>
+<body>
+    <h1>Admin Login</h1>
+    <form method="POST" action="{% url 'police' %}">
+		{% csrf_token %}
+		<input type="text" name="username" placeholder="Admin Username" required>
+		<input type="password" name="password" placeholder="Admin Password" required>
+		<button type="submit">Login</button>
+	</form>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
